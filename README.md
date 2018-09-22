@@ -1,7 +1,7 @@
 # React Weather API
 
-A simple weather API using React, Node.js, Bootstrap, and Open Weather Map API.
-
+A node app utlizing a weather API using React, Bootstrap, and Open Weather Map API.
+![weather_api_react](/src/img/weather_api_react.gif)
 
 ## Getting Started
 
@@ -14,7 +14,6 @@ What things you need to install the software and how to install them
 ```
 node.js
 
-npm install node
 ```
 
 ### Installing
