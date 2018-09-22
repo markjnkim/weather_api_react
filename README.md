@@ -1,8 +1,7 @@
 # React Weather API
 
-A simple weather API using React, Node.js, Bootstrap
+A simple weather API using React, Node.js, Bootstrap, and Open Weather Map API.
 
-using .
 
 ## Getting Started
 
