@@ -3,7 +3,8 @@ import Title from './components/Title/Title';
 import Weather from './components/Weather/Weather';
 import Form from './components/Form/Form';
 import './App.css';
-require('dotenv').config();
+
+const api_key = process.env.REACT_APP_API_KEY;
 
 class App extends Component {
   state = {
@@ -19,7 +20,7 @@ class App extends Component {
     event.preventDefault();
     const city = event.target.elements.city.value;
     const country = event.target.elements.country.value;
-    const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&APPID=${process.env.API_KEY}&units=imperial`);
+    const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&APPID=${api_key}&units=imperial`);
     const data = await api_call.json();
     if (city && country) {
       console.log(data);
